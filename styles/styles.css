@@ -1,0 +1,302 @@
+/* reset */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* document */
+body {
+    font-size: 1rem;
+    font-family: "URW Gothic L", "Helvetica", "Arial", sans-serif;
+    counter-reset: section;
+}
+
+main {
+    padding: 0.5rem;
+}
+
+/* containers */
+body > footer {
+    width: 100%;
+    padding: 1rem;
+    background: #0060a0;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+body > footer img {
+    vertical-align: middle;
+}
+
+footer a:active, footer a:visited, footer a:hover, footer a:link {
+    color: white;
+}
+
+.navigation {
+    clear: both;
+    margin: 2rem 0.5rem;
+}
+
+nav > ul {
+    margin-top: 1em;
+    border: 0.1em solid #0060a0;
+    padding: 0.5em;
+    background-color: #f6f6f6;
+}
+
+.navigation ul a {
+    color: #0000ff;
+}
+
+#calculator {
+    width: 50%;
+    /*height: calc(53vw);*/
+}
+
+iframe {
+    width: 100%;
+    height: calc(56.25vw - 0.5625rem);
+    border: none;
+}
+
+/* images */
+#logo {
+    float: left;
+    padding: 1rem;
+}
+
+#graph,
+#graph > img {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: 1rem auto;
+}
+
+a[hreflang='it']:before {
+    display: block;
+    content: '';
+    background-image: url("../media/flag-it.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1em;
+    height: 1em;
+    float: left;
+    margin-right: 0.5em;
+}
+
+a[hreflang='fr']:before {
+    display: block;
+    content: '';
+    background-image: url("../media/flag-fr.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1em;
+    height: 1em;
+    float: left;
+    margin-right: 0.5em;
+}
+
+a[hreflang='en']:before {
+    display: block;
+    content: '';
+    background-image: url("../media/flag-en.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1em;
+    height: 1em;
+    float: left;
+    margin-right: 0.5em;
+}
+
+button > img {
+    height: 1rem;
+}
+
+#marchant {
+    width: 300px;
+    float: left;
+    padding: 1rem;
+}
+
+#marchant img {
+    width: 100%;
+}
+
+figcaption {
+    color: grey;
+    margin: 0.5rem 0;
+}
+
+/* text */
+h1 {
+    color: white;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    border-bottom: solid 1px black;
+}
+
+h3:before {
+    counter-increment: section;
+    content: counter(section);
+    padding-right: 1rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    padding: 0.5rem 0;
+}
+
+article a:active, article a:visited, article a:hover, article a:link {
+    color: black;
+}
+
+header {
+    background-color: #0060a0;
+}
+
+small {
+    display: block;
+}
+
+article > footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: dashed 1px black;
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+label {
+    color: gray;
+}
+
+/* lists */
+ul {
+    list-style-type: none;
+}
+
+ul ul {
+    margin-left: 1rem;
+}
+
+dt {
+    font-weight: bold;
+    color: #0060a0;
+}
+
+dd {
+    padding-left: 1rem;
+}
+
+dd::before {
+    content: url("../media/target.png");
+    padding-right: 0.5rem;
+}
+
+ol {
+    padding-left: 1rem;
+    list-style-position: inside;
+}
+
+/* table */
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.5em;
+}
+
+thead > tr {
+    background: #2459a8;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-color: black;
+    color: white;
+}
+
+tbody th {
+    text-align: left;
+}
+
+tbody > tr {
+    border-top-style: solid;
+    border-width: thin;
+    border-color: gray;
+}
+
+tbody > tr:nth-child(even) {
+    background: #e6f5ff;
+}
+
+tbody td {
+    text-align: center;
+}
+
+/* forms */
+button {
+    font-size: 1rem;
+    color: white;
+    background-color: #0060a0;
+    border-radius: 0.2rem;
+    border-width: 0;
+    padding: 0.2rem;
+}
+
+form {
+    padding: 0.5rem;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+label, input:not([type="radio"]):not([type="checkbox"]):not([type="search"]), textarea, select {
+    display: block;
+}
+
+section form input:not([type="radio"]):not([type="checkbox"]):not([type="search"]), section form, textarea, section form select {
+    width: 100%;
+}
+
+fieldset {
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border: 0.05rem solid silver;
+}
+
+#font-size-form {
+    float: right;
+}
+
+#font-size-form > label, #font-size-form > input, #font-size-form > output {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
